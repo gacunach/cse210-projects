@@ -5,13 +5,13 @@ class Program
     static void Main(string[] args)
     {
         DisplayWelcomeMessage();
-
+    
         string userName = PromptUserName();
         int userNumber = PromptUserNumber();
         int numberSquare = SquareNumber(userNumber);
         
         DisplayResult(userName, numberSquare);
-
+    }
         static void DisplayWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Program!");
@@ -39,5 +39,5 @@ class Program
             Console.WriteLine($"{name}, the square of your number is {square}");
         }
 
-    }
+
 }
