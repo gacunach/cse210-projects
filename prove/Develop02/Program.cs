@@ -1,5 +1,5 @@
 using System;
-
+// The program saves to a csv file instead of a txt file.
 class Program
 {
     static void Main(string[] args)
