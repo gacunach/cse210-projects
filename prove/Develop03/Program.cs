@@ -1,6 +1,4 @@
-
-
-
+// Two scriptures are added the user can choose one to memorize and the program runs for that scripture
 using System;
 using System.Runtime.InteropServices.Marshalling;
 
