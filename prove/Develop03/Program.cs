@@ -22,9 +22,16 @@ class Program
         Console.WriteLine("2.Moroni 10:4-5");
 
         string scriptureChosen = Console.ReadLine();
-        int choiceNumber = int.Parse(scriptureChosen);
+        int chosenNumber = int.Parse(scriptureChosen);
 
-        if (choiceNumber == 1)
+        while (!(chosenNumber == 1 || chosenNumber == 2))
+        {
+            Console.WriteLine("Please enter a valid value");
+            string newNumber = Console.ReadLine();
+            int newChoice = int.Parse(newNumber);
+            chosenNumber = newChoice;            
+        }
+        if (chosenNumber == 1)
         {
             while (true)
             {   
@@ -48,7 +55,7 @@ class Program
                 scripture1.HideRandomWords(5); 
             }
         }
-        else
+        else if (chosenNumber == 2)
         {
             while (true)
             {
