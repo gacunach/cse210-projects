@@ -1,19 +1,19 @@
 public class Comment
 {
     
-    public string CommenterName { get; set; }
-    public string CommentText { get; set; }
+    public string _commenterName { get; set; }
+    public string _commentText { get; set; }
 
     
     public Comment(string commenterName, string commentText)
     {
-        CommenterName = commenterName;
-        CommentText = commentText;
+        _commenterName = commenterName;
+        _commentText = commentText;
     }
 
    
     public void DisplayComment()
     {
-        Console.WriteLine($"{CommenterName}: \"{CommentText}\"");
+        Console.WriteLine($"{_commenterName}: \"{_commentText}\"");
     }
 }
