@@ -4,20 +4,20 @@ using System.Collections.Generic;
 public class Order
 {
    
-    private List<Product> products;
-    private Customer customer;
+    private List<Product> _products;
+    private Customer _customer;
 
    
     public Order(Customer customer)
     {
-        this.customer = customer;
-        products = new List<Product>();
+        _customer = customer;
+        _products = new List<Product>();
     }
 
     
     public void AddProduct(Product product)
     {
-        products.Add(product);
+        _products.Add(product);
     }
 
     )
