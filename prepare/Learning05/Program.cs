@@ -4,6 +4,19 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Learning05 World!");
+        Assignment a1 = new Assignment("Gabriela Acuña", "Multiplication");
+        Console.WriteLine(a1.GetSummary());
+        Console.WriteLine();
+
+        MathAssignment a2 = new MathAssignment("Gabriela Acuña", "Fractions", "7.3", "8-19");
+        Console.WriteLine(a2.GetSummary());
+        Console.WriteLine(a2.GetHomeworkList());
+        Console.WriteLine();
+
+
+        WritingAssignment a3 = new WritingAssignment("Gabriela Acuña", "European History", "The Causes of World War II");
+        Console.WriteLine(a3.GetSummary());
+        Console.WriteLine(a3.GetWritingInformation());
+        Console.WriteLine();
     }
 }
