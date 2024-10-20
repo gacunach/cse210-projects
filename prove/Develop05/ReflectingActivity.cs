@@ -21,7 +21,8 @@ public class ReflectingActivity : Activity
         "Think of a time when you did something truly selfless."
     };
 
-    public ReflectingActivity() : base("Reflecting Activity", "This activity will help you reflect on times in your life when you have shown strength and resilience.")
+    public ReflectingActivity() 
+        : base("Reflecting Activity", "This activity will help you reflect on times in your life when you have shown strength and resilience.")
     {
     }
 

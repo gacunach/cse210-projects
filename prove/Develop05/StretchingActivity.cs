@@ -9,7 +9,8 @@ public class StretchingActivity : Activity
         "Do a hamstring stretch by reaching for your toes while seated."
     };
 
-    public StretchingActivity() : base("Stretching Activity", "This activity will guide you through different stretches. Hold each stretch for a few seconds and focus on your breathing.")
+    public StretchingActivity() 
+        : base("Stretching Activity", "This activity will guide you through different stretches. Hold each stretch for a few seconds and focus on your breathing.")
     {
     }
 
