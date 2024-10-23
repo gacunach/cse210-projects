@@ -1,3 +1,5 @@
+// added one more activity class to the program
+
 using System;
 
 class Program
