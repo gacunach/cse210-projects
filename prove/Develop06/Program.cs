@@ -1,3 +1,4 @@
+// another class added for another type of goals that has levels
 using System;
 
 class Program
