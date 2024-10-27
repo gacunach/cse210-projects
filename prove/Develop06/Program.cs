@@ -3,9 +3,9 @@ using System;
 class Program
 {
     private static GoalManager _goalManager = new GoalManager();
+
     static void Main(string[] args)
     {
-        
         while (true)
         {
             Console.WriteLine("\nMenu:");
@@ -51,15 +51,15 @@ class Program
 
     private static void CreateGoal()
     {
-        Console.Write("Enter goal type (1 = Simple, 2 = Eternal, 3 = Checklist): ");
+        Console.Write("Enter goal type (1 = Simple, 2 = Eternal, 3 = Checklist, 4 = Level): ");
         string goalType = Console.ReadLine();
-        
+
         Console.Write("Enter goal name: ");
         string name = Console.ReadLine();
-        
+
         Console.Write("Enter goal description: ");
         string description = Console.ReadLine();
-        
+
         Console.Write("Enter goal points: ");
         int points = int.Parse(Console.ReadLine());
 
@@ -74,11 +74,17 @@ class Program
             case "3":
                 Console.Write("Enter target number of completions: ");
                 int target = int.Parse(Console.ReadLine());
-                
+
                 Console.Write("Enter bonus points: ");
                 int bonus = int.Parse(Console.ReadLine());
-                
+
                 _goalManager.CreateGoal(new ChecklistGoal(name, description, points, target, bonus));
+                break;
+            case "4":
+                Console.Write("Enter maximum level for this goal: ");
+                int maxLevel = int.Parse(Console.ReadLine());
+
+                _goalManager.CreateGoal(new LevelGoal(name, description, points, maxLevel));
                 break;
             default:
                 Console.WriteLine("Invalid goal type.");

@@ -7,16 +7,21 @@ public class EternalGoal : Goal
 
     public override void RecordEvent()
     {
+        _points += 100;
     }
 
     public override bool IsComplete()
     {
         return false;
     }
+    public override string GetDetailsString()
+    {
+        return $"{_shortName}: {_description} - {_points} points (Eternal)";
+    }
 
     public override string GetStringRepresentation()
     {
-        return $"Eternal Goal: {_shortName} | {_description} | {_points}";
+        return $"EternalGoal: {_shortName}, {_description}, {_points}";
     }
     
 }
